@@ -1,0 +1,19 @@
+
+/* Base section */
+html {
+    font-size: 62.5%; /* Default 1rem = 10px */
+}
+
+/* Responsive typography */
+@media (max-width: 480px) {
+    html {
+        font-size: 57%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    html {
+        font-size: 60%;
+    }
+}
+

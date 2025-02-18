@@ -1,0 +1,40 @@
+
+/* Footer section */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 3rem 2rem 1rem;
+}
+
+.footer .social-nav,
+.footer .footer-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer .social-nav li,
+.footer .footer-nav li {
+    margin: 0 1rem;
+}
+
+/* Responsive Footer Adjustments */
+@media (max-width: 767px) {
+    :root {
+        --footer-padding: 5rem 2rem 1rem;
+    }
+
+    .footer .social-nav,
+    .footer .footer-nav {
+        text-align: center;
+    }
+
+    .footer .social-nav li + li,
+    .footer .footer-nav li + li {
+        padding-left: 2rem;
+    }
+}
+

@@ -1,0 +1,66 @@
+
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.header {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.card-work {
+    background: #222;
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card-title a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background: #000;
+    color: white;
+    margin-top: 2rem;
+}
+
+/* Card WORK - Responsive adjustments */
+@media (max-width: 767px) {
+    .card-work .card-inner {
+        --text-color: var(--color-white);
+        position: relative;
+    }
+
+    .card-work .card-title {
+        opacity: 1;
+    }
+
+    .card-work .card-title a {
+        padding: 2rem 1rem 0 1rem;
+    }
+}
+

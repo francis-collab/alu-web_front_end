@@ -1,0 +1,46 @@
+
+/* Styling the menu icon */
+.menu-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.navicon {
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  position: relative;
+}
+
+.navicon:before, .navicon:after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.navicon:before {
+  top: -8px;
+}
+
+.navicon:after {
+  bottom: -8px;
+}
+
+/* When menu is active */
+.menu-btn:checked + .menu-icon .navicon {
+  background-color: transparent;
+}
+
+.menu-btn:checked + .menu-icon .navicon:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu-btn:checked + .menu-icon .navicon:after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+

@@ -1,0 +1,86 @@
+
+/* menu btn */
+header .menu-btn {
+  display: none;
+}
+
+header .menu-btn:checked ~ .navbar-menu {
+  display: block;
+}
+
+header .menu-btn:checked ~ .navbar-menu nav {
+  max-height: 100%;
+  overflow: inherit;
+}
+
+/* Section HERO section */
+@media (max-width: 767px) {
+  .section-hero {
+    margin: -0.1rem 0;
+  }
+
+  .hero-homepage {
+    background-position: 85% 0;
+  }
+
+  .section-hero .section-body {
+    padding: 2rem;
+  }
+}
+
+/* Transform hamburger icon when checked */
+header .menu-btn:checked + .menu-icon .navicon {
+  background: transparent;
+}
+
+header .menu-btn:checked + .menu-icon .navicon::before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+header .menu-btn:checked + .menu-icon .navicon::after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  :root {
+    --header-padding: 2rem 0 0;
+  }
+
+  header {
+    background: var(--color-black);
+  }
+
+  .header-container {
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+  }
+
+  header .menu-icon {
+    display: block;
+  }
+}
+
+/* Smaller screen adjustments */
+@media (max-width: 480px) {
+  .header-logo {
+    flex-basis: 70%;
+  }
+}
+
+/* Mid-size screens */
+@media (min-width: 481px) and (max-width: 767px) {
+  .header-logo {
+    flex-basis: 79%;
+  }
+}
+
+/* Hide menu icon on desktop */
+@media (min-width: 768px) {
+  .header .menu-icon {
+    display: none;
+  }
+}
+

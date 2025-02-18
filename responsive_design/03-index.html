@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="03-styles.css">
+</head>
+<body>
+
+    <section>
+        <h2>About Us</h2>
+        <img
+            sizes="(max-width: 3000px) 40vw, 1200px"
+            srcset="
+                images/pic-about-01_380w.jpg 380w,
+                images/pic-about-01_853w.jpg 853w,
+                images/pic-about-01_1200w.jpg 1200w"
+            src="images/pic-about-01_1200w.jpg"
+            alt="About Us">
+    </section>
+
+    <section>
+        <h2>Article 1</h2>
+        <img
+            sizes="(max-width: 3000px) 40vw, 1200px"
+            srcset="
+                images/pic-article-01_380w.jpg 380w,
+                images/pic-article-01_853w.jpg 853w,
+                images/pic-article-01_1200w.jpg 1200w"
+            src="images/pic-article-01_1200w.jpg"
+            alt="Article 1">
+    </section>
+
+    <section>
+        <h2>Article 2</h2>
+        <img
+            sizes="(max-width: 3000px) 40vw, 1200px"
+            srcset="
+                images/pic-article-02_380w.jpg 380w,
+                images/pic-article-02_853w.jpg 853w,
+                images/pic-article-02_1200w.jpg 1200w"
+            src="images/pic-article-02_1200w.jpg"
+            alt="Article 2">
+    </section>
+
+    <section>
+        <h2>Article 3</h2>
+        <img
+            sizes="(max-width: 3000px) 40vw, 1200px"
+            srcset="
+                images/pic-article-03_380w.jpg 380w,
+                images/pic-article-03_853w.jpg 853w,
+                images/pic-article-03_1200w.jpg 1200w"
+            src="images/pic-article-03_1200w.jpg"
+            alt="Article 3">
+    </section>
+
+</body>
+</html>
+
